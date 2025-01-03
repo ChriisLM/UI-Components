@@ -1,0 +1,33 @@
+.label {
+  display: inline-block;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.label-small {
+  font-size: 12px;
+}
+
+.label-medium {
+  font-size: 16px;
+}
+
+.label-large {
+  font-size: 20px;
+}
+
+.label-primary {
+  color: var(--primary-color, #007bff);
+}
+
+.label-secondary {
+  color: var(--secondary-color, #6c757d);
+}
+
+.label-error {
+  color: var(--error-color, #dc3545);
+}
+
+.label-success {
+  color: var(--success-color, #28a745);
+}
