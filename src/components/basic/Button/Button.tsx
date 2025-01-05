@@ -4,25 +4,24 @@ import { ButtonProps } from "../../../types/Button";
 export function Button({
   variant = "filled",
   size = "medium",
-  color = "primary",
+  color = "default",
   font = "roboto",
   disabled = false,
-  onClick,
+  loading = false,
+  fullWidth = false,
   className = "",
   children,
+  onClick,
 }: ButtonProps) {
-  const buttonClassName = `
-    button 
-    button-${variant} 
-    button-${size} 
-    button-${color} 
-    button-${font}
-    ${disabled ? "button-disabled" : ""} 
-    ${className}
-  `.trim();
-
   return (
-    <button className={buttonClassName} onClick={onClick} disabled={disabled}>
+    <button
+      className={`button button-${variant} button-${size} button-${color} button-${font} ${
+        disabled ? "button-disabled" : ""
+      } ${fullWidth ? "button-fullWidth" : ""} ${className}`}
+      disabled={disabled || loading}
+      onClick={onClick}
+    >
+      {/* {add loading} */}
       {children}
     </button>
   );

@@ -1,16 +1,23 @@
-import { Fonts } from "./globalStyles";
+import { Fonts, IconPosition, Sizes } from "./globalStyles";
 
-export type ButtonVariant = "filled" | "outlined" | "text";
-export type ButtonSize = "small" | "medium" | "large";
-export type ButtonColor = 'primary' | 'secondary' | 'error' | 'success';
+export type ButtonVariant = "filled" | "outlined" | "dashed" | "text";
+export type ButtonType = "submit" | "button" | "reset";
+export type ButtonColor = "default" | "primary" | "secondary";
 
 export interface ButtonProps {
   variant?: ButtonVariant;
-  size?: ButtonSize;
+  size?: Sizes;
   color?: ButtonColor;
-  font?: Fonts
+  font?: Fonts;
   disabled?: boolean;
-  onClick?: () => void;
+  loading?: boolean;
+  fullWidth?: boolean;
   className?: string;
   children: React.ReactNode;
+  onClick?: () => void;
+}
+
+export interface ButtonWithIcon extends ButtonProps {
+  icon?: React.ReactNode;
+  iconPosition?: IconPosition;
 }
