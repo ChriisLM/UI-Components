@@ -1,10 +1,10 @@
-import { Colors, FontSizes } from "./globalStyles";
+import { FontSizes, FontWeights } from "./globalStyles";
 
 export interface LabelProps {
-  text: string;
   htmlFor?: string;
   size?: FontSizes;
-  color?: Colors;
-  customColor?: string;
+  weight?: FontWeights;
+  disabled?: boolean;
   className?: string;
+  children?: React.ReactNode;
 }

@@ -1,23 +1,22 @@
 import { LabelProps } from "../../../types/Label";
-import "./Label.css"
+import "./Label.css";
 
 export function Label({
-  text,
   htmlFor,
   size = "medium",
-  color = "primary",
+  weight = "normal",
+  disabled,
   className = "",
+  children,
 }: LabelProps) {
-  const labelClassName = `
-    label 
-    label-${size} 
-    label-${color} 
-    ${className}
-  `.trim();
-
   return (
-    <label htmlFor={htmlFor} className={labelClassName}>
-      {text}
+    <label
+      htmlFor={htmlFor}
+      className={`label label-${size} label-font-${weight} ${
+        disabled ? "label-disabled" : ""
+      } ${className}`}
+    >
+      {children}
     </label>
   );
 }
