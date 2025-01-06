@@ -1,0 +1,58 @@
+.divider {
+  border-color: #e5e7eb;
+}
+
+.divider-horizontal {
+  border-bottom-width: 0px;
+  width: 100%;
+}
+
+.divider-vertical {
+  border-right-width: 0px;
+}
+
+/* Style Border */
+
+.divider-solid {
+  border-style: solid;
+}
+
+.divider-dashed {
+  border-style: dashed;
+}
+
+.divider-dotted {
+  border-style: dotted;
+}
+
+/* Spacing */
+
+.divider-horizontal-small {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.divider-horizontal-medium {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.divider-horizontal-large {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.divider-vertical-small {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.divider-vertical-medium {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.divider-vertical-large {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
