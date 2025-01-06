@@ -1,14 +1,21 @@
 import { FontSizes } from "./globalStyles";
 
-export type InputType = 'text' | 'email' | 'password' | 'number' | 'date';
+export type InputType =
+  | "text"
+  | "email"
+  | "password"
+  | "number"
+  | "date"
+  | "tel";
 
 export interface InputProps {
-  id: string;
   name?: string;
   type?: InputType;
   value?: string;
+  disable?: boolean;
   placeholder?: string;
   size?: FontSizes;
+  fullWidth?: boolean;
   className?: string;
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (value: string | number) => void;
 }
