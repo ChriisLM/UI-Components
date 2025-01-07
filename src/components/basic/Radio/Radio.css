@@ -1,0 +1,47 @@
+.radio-container {
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.radio-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.radio-input {
+  background-color: #ffffff;
+  color: #3b82f6;
+  outline: none;
+}
+
+.radio-label {
+  display: block;
+  margin-left: 0.5rem;
+}
+
+/* Tamaños */
+.radio-small {
+  width: 16px;
+  height: 16px;
+}
+
+.radio-medium {
+  width: 20px;
+  height: 20px;
+}
+
+.radio-large {
+  width: 24px;
+  height: 24px;
+}
+
+/* Required */
+.radio-required {
+  margin-left: 0.25rem;
+  color: #ef4444;
+}
+
+/* Disabled */
+.radio-disabled {
+  background-color: #f3f4f6;
+}
