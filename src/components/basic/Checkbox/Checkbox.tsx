@@ -8,7 +8,7 @@ export function Checkbox({
   disabled = false,
   required = false,
   label,
-  size = "medium",
+  size = "small",
   className = "",
   onChange,
 }: CheckboxProps) {

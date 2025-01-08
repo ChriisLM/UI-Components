@@ -1,10 +1,10 @@
-.avatar-container{
+.avatar-container {
   position: relative;
   display: inline-flex;
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  background-color: #E5E7EB;
+  background-color: #e5e7eb;
 }
 
 .avatar {
@@ -33,30 +33,29 @@
 
 /* Rounded Shape*/
 
-.avatar-circle{
+.avatar-circle {
   border-radius: 50%;
 }
 
-.avatar-square{
+.avatar-square {
   border-radius: 12px;
 }
 
 /* Border Styled */
 
-.avatar-solid{
+.avatar-solid {
   border: 1px solid black;
 }
 
-.avatar-dashed{
+.avatar-dashed {
   border: 1px dashed black;
 }
 
-.avatar-dotted{
+.avatar-dotted {
   border: 1px dotted black;
 }
 
-
 /* Text Error */
-.avatar-spanError{
-  color: #4B5563; 
+.avatar-spanError {
+  color: #4b5563;
 }
