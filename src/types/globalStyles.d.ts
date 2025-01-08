@@ -1,13 +1,16 @@
 export type Fonts = "openSans" | "roboto" | "poppins";
-export type FontSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
-export type FontWeights = 'light' | 'regular' | 'medium' | 'bold' | 'black';
-export type Spacing = 'none' | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+export type Sizes = "small" | "medium" | "large";
+export type FontWeights = "light" | "normal" | "medium" | "bold";
+export type Spacing = "none" | "small" | "medium" | "large";
+export type LineStyle = "solid" | "dashed" | "dotted";
+export type TextPosition = "start" | "center" | "end";
+export type IconPosition = "start" | "end";
 
-export type Colors =
+export type ColorsScheme =
+  | "default"
   | "primary"
   | "secondary"
-  | "error"
-  | "warning"
-  | "info"
   | "success"
-  | "default";
+  | "warning"
+  | "error"
+  | "info";
