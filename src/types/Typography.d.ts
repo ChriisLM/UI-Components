@@ -1,3 +1,5 @@
+import { Colors, Fonts, FontWeights } from "./globalStyles";
+
 export type TypographyVariant =
   | "h1"
   | "h2"
@@ -9,24 +11,15 @@ export type TypographyVariant =
   | "caption"
   | "overline";
 
-export type TypographyColor =
-  | "primary"
-  | "secondary"
-  | "error"
-  | "warning"
-  | "info"
-  | "success"
-  | "default";
-
-export type TypographyFont = "openSans" | "roboto" | "poppins";
-
 export type TypographyAlign = "left" | "center" | "right" | "justify";
 
 export interface TypographyProps {
   variant?: TypographyVariant;
-  color?: TypographyColor;
+  weight?: FontWeights;
   align?: TypographyAlign;
-  font?: TypographyFont;
+  color?: Colors;
+  font?: Fonts;
+  transform?: "none" | "capitalize" | "uppercase" | "lowercase";
   className?: string;
   children: React.ReactNode;
 }
