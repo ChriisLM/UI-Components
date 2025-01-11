@@ -1,8 +1,14 @@
 {
   "name": "ui-components",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A reusable UI components library built with TypeScript and Vite.",
   "type": "module",
+  "files": [
+    "dist",
+    "src/styles/global.css",
+    "src/styles/variables.css"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
