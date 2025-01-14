@@ -1,9 +1,8 @@
 {
   "name": "ui-components-chriislm",
-  "version": "1.1.0",
+  "version": "1.1.5",
   "description": "A reusable UI components library built with TypeScript and Vite.",
-  "main": "./src/components/basic/index.ts",
-  "types": "./src/types/index.d.ts",
+  "main": "./src/components/basic/index.tsx",
   "keywords": [
     "UI",
     "Components",
@@ -13,18 +12,10 @@
   ],
   "author": "ChriisLM",
   "license": "MIT",
-  "type": "module",
   "files": [
     "dist",
     "src"
   ],
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
-    }
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
